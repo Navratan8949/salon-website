@@ -67,7 +67,10 @@ export default function Footer({ onBook }) {
         </div>
 
         <div className="border-t border-cream/10 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[11px] uppercase tracking-widest2 text-cream/40">© 2026 {salon.name}. All Rights Reserved.</p>
+          <div className="flex flex-col gap-1 text-[11px] uppercase tracking-widest2 text-cream/40">
+            <p>© 2026 {salon.name}. All Rights Reserved.</p>
+            <p>Designed by <a href="https://codepecharcha.com" target="_blank" rel="noopener noreferrer" className="hover:text-cream transition-colors">Code pe Charcha</a></p>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="text-[11px] uppercase tracking-widest2 text-cream/40 hover:text-cream transition-colors">Privacy</a>
             <a href="#" className="text-[11px] uppercase tracking-widest2 text-cream/40 hover:text-cream transition-colors">Terms</a>
